@@ -1,8 +1,7 @@
 # API Rick & Morty
 
 Trabalho de final de módulo para o módulo Front 3, consumindo a api.
-<img src="./assets/demo.mp4" alt="API Rick and Morty">
-
+ - Vídeo demonstrativo em assets!
 ## Estrutura do Projeto
 
 1. **HTML**
