@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body {
+    background: url(../assets/background.jpg) no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -8rem;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.details-body {
+    background: url(../assets/details-background.jpg) no-repeat;
+    background-color: #252525;
+    background-size: cover;
+    background-position: bottom right;
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-size: contain;
+        background-position-y: -8rem;
+    }
+    .details-body {
+        background-size: contain;
+        background-position: bottom right;
+    }
+}
+
+@media (width: 414px) and (height: 896px),
+       (width: 390px) and (height: 844px),
+       (width: 430px) and (height: 932px),
+       (width: 412px) and (height: 915px),
+       (width: 360px) and (height: 740px) {
+    body {
+      background-size: cover;
+    }
+    .details-body {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1025px) {
+    .details-body{
+        background-size: contain;
+    }
+}
+
+/* Header */
+
+.logo {
+    filter: invert();
+    width: 7%;
+    max-width: 30px;
+    margin: 10px 10px 5% 10px;
+}
+
+header a {
+    animation: bounce 300ms alternate infinite cubic-bezier(.2, .65, .6, 1);
+}
+
+.title {
+    color: #0C7D22;
+    font-family: "Shadows Into Light", cursive;    
+    animation: shake 0.5s ease-in-out;
+}
+
+.form-search {
+    width: 75%;
+    max-width: 500px;
+}
+
+.search-btn {
+    border-left: none;
+}
+
+::placeholder {
+    color: #0C7D22 !important;
+}
+
+/* Cards */
+.card {
+    border-radius: 9px;
+    height: 100%;
+    max-height: 8.5rem;
+    background-color: #354338;
+    animation: drop-in 1000ms ease;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.card .img {
+    max-height: 8.4rem;
+}
+
+.card-body p {
+    line-height: 2px;
+}
+
+.card-title {
+    max-height: 35px;
+    animation: pulse 2s ease-in-out;
+}
+
+.small {
+    font-size: 12px;
+    max-height: 2px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+/* Pagination */
+
+.pagination .page-item .page-link {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #0C7D22;
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #0C7D22;
+    border-color: #055B17;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #aaa;
+    background-color: #000;
+    border-color: #0C7D22;
+}
+
+.pagination .page-item .page-link:hover {
+    color: #fff;
+    background-color: #055B17;
+    border-color: #055B17;
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px 0;
+    margin-top: 50px;
+    height: 8rem;
+    width: 100vw;
+    background-color: #0C7D22;
+    color: #3cd45a;
+}
+
+/* Details */
+
+.carousel {
+    max-width: 50rem;
+}
+
+.text-border {
+    text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+/* Animations */
+
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}

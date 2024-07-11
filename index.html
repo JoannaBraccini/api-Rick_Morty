@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty - Tela Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="d-flex flex-column">
+
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid ">
+        <a class="navbar-brand" 
+          href="https://rickandmortyapi.com/documentation/?authuser=0#rest" target="_blank">
+          <img src="./assets/RICK_MORTY_ICON-01.svg" alt="Rick and Morty Icon" 
+            style="filter: invert();" width="30" height="30">
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar container-fluid d-flex flex-column align-items-center py-3">
+      <h1 class="display-3 title fw-bolder pb-2">API de Rick and Morty</h1>
+      <form class="form-search" role="search">
+          <div class="input-group mb-3">
+              <input class="form-control bg-black text-light border-secondary-subtle border-end-0" 
+                  type="search" placeholder="Pesquise" aria-label="Search" id="search-input">
+              <button class="btn border-secondary-subtle search-btn" type="submit">
+                  <img class="pb-1" src="./assets/search.svg" alt="search">
+              </button>
+          </div>
+      </form>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <div class="row offset-xl-1">
+      <div class="col-12">
+        <div class="row row-gap-2 column-gap-0 offset-lg-1" id="list-cards">
+          <!-- Inserido por JS -->
+        </div>          
+      </div>
+    </div>
+    <div aria-live="polite" aria-atomic="true" 
+        class="position-fixed" id="container-toast" 
+        style="top: 24px; right: 32px">
+    </div> 
+  </main>
+    
+  <footer class="container-fluid fw-bold mt-auto">
+    <div class="row" id="footer-info">        
+      <!-- Inserido por JS -->
+    </div>
+    <div class="row text-center pb-2">
+      <div class="col">
+        <p class="fs-6 fw-semibold">Desenvolvido por <span class="text-light">Joanna Braccini</span> em 2024</p>
+      </div>
+    </div>
+  </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/integrations.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
