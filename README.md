@@ -24,6 +24,3 @@ Aplicar conhecimentos adquiridos até agora. Criar front com Bootstrap e impleme
 - Pelo menos 3 animações com Keyframe, easing e cubic-bezier
 - Flexbox com grid system ou display flex
 - -Bootstrap: grid system, utility classes e componentes
-
-### Link
-[Projeto](https://)
