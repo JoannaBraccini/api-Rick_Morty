@@ -1,5 +1,7 @@
 # API Rick & Morty
 
+[Teste a Funcionalidade](https://api-rick-morty-rouge.vercel.app/)
+
 Trabalho de final de módulo para o módulo Front 3, consumindo a api.
  - Vídeo demonstrativo em assets!
 ## Estrutura do Projeto
