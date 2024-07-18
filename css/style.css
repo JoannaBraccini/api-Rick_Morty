@@ -87,7 +87,7 @@ header a {
 .card {
   border-radius: 9px;
   height: 100%;
-  max-height: 8.5rem;
+  max-height: 8.3rem;
   background-color: #354338;
   animation: drop-in 1000ms ease;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -100,7 +100,7 @@ header a {
 }
 
 .card .img {
-  max-height: 8.4rem;
+  max-height: 8.2rem;
 }
 
 .card-body p {
