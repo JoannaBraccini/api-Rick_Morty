@@ -43,7 +43,7 @@ function displayResults(results) {
       const cardHtml = `
         <div class="carousel-item ${isActive}">
           <img src="${result.image}" class="d-block w-100" alt="${result.name}">
-          <div class="carousel-caption d-none d-md-block">          
+          <div class="carousel-caption d-block">          
             <h1 class="fw-bold">${result.name}</h1>
             <p class="fs-5">
               Status: ${result.status} - Espécie: ${result.species} - Gênero: ${
